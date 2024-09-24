@@ -1,17 +1,15 @@
-import { Menu } from "./Menu"
+import Menu from './Menu'
 
 export interface PaginaProps {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     children: any
+    className?: string
 }
 
-export function Pagina(props: PaginaProps) {
+export default function Pagina(props: PaginaProps) {
     return (
         <div className="flex">
             <Menu />
-            <main className="flex-1 p-7">
-                {props.children}
-            </main>
+            <main className={`flex-1 p-7 ${props.className ?? ''}`}>{props.children}</main>
         </div>
     )
 }

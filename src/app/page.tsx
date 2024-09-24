@@ -1,9 +1,6 @@
-import { Pagina } from "./components/template/Pagina";
+import Image from 'next/image'
+import Pagina from './components/template/Pagina'
 
 export default function Home() {
-  return (
-    <Pagina>
-      <h2>Teste</h2>
-    </Pagina>
-  );
+    return <Pagina>Opa</Pagina>
 }
